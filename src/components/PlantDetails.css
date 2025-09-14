@@ -1,0 +1,140 @@
+.plant-details {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plant-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.plant-details-header h2 {
+  color: #2e7d32;
+  font-size: 28px;
+}
+
+.plant-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.plant-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.plant-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.plant-image img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.detail-label {
+  font-weight: 600;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  flex: 1;
+}
+
+.care-section {
+  border-left: 2px solid #4caf50;
+  padding-left: 20px;
+}
+
+.care-info h3 {
+  margin: 0 0 15px 0;
+  color: #2e7d32;
+}
+
+.care-detail {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.care-label {
+  font-weight: 600;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.care-value {
+  flex: 1;
+}
+
+.care-tips-section {
+  margin-bottom: 20px;
+}
+
+.care-tips h3 {
+  margin: 15px 0 10px;
+  color: #2e7d32;
+}
+
+.care-tips ul {
+  padding-left: 20px;
+}
+
+.care-tips li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.plant-details-footer {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .plant-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .plant-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .plant-details-content {
+    grid-template-columns: 1fr;
+  }
+
+  .care-section {
+    border-left: none;
+    border-top: 2px solid #4caf50;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .detail-row,
+  .care-detail {
+    flex-direction: column;
+  }
+
+  .detail-label,
+  .care-label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
